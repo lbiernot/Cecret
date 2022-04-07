@@ -1211,7 +1211,7 @@ process pangolin {
   publishDir "${params.outdir}", mode: 'copy'
   tag "SARS-CoV-2 lineage Determination"
   cpus params.medcpus
-  container 'staphb/pangolin:latest'
+  container 'staphb/pangolin:3.1.20-pangolearn-2022-02-28'
   stageInMode 'copy'
 
   when:
